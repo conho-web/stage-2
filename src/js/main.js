@@ -1,8 +1,8 @@
-// html
-// import "/index.html";
-
-// css
-import "../css/style.css";
-
 // js
-import "./j-1";
+import "./j-1.js";
+
+// html
+import "/index.html";
+
+// scss
+import "../scss/style.scss";
