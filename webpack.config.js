@@ -8,11 +8,12 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    assetModuleFilename: "assets/[name][ext]",
   },
   mode: "development",
   devServer: {
     port: 4200,
-	},
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
@@ -31,6 +32,10 @@ module.exports = {
       {
         test: /\.s[ac]ss$/i,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      { 
+        test: /\.(svg|ico|png|webp|jpg|gif|jpeg)$/, 
+        type: "asset/resource" 
       },
     ],
   },
