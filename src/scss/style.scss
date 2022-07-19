@@ -1,9 +1,17 @@
 @import "./reset.scss";
 
 $green: #00ad54;
+$purple: #b68ed8;
 
 html {
   font-size: 16px;
 }
 
+.title {
+  font-size: 3rem;
+  margin: 4rem 0;
+  text-align: center
+}
+
 @import "./j-1.scss";
+@import "./j-2.scss";
