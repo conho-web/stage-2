@@ -55,7 +55,7 @@ function calculate() {
 
   function calculate(i) {
     return function () {
-      screen.value = eval(screen.value);
+      screen.value = eval(screen.value).toFixed(2);
     };
   }
 
