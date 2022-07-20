@@ -3,6 +3,7 @@ let buttonPrev = document.querySelector(".slider__button-prev");
 let buttonNext = document.querySelector(".slider__button-next");
 
 let counter = 0;
+let number = 0;
 
 function recursion(number) {
   for (let i = 0; i < slides.length; i++) {
