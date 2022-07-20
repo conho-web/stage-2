@@ -60,44 +60,44 @@ function calculate() {
   }
 
   // keyboard input
-  document.addEventListener('keydown', function (evt) {
-    let SYMBOL_KEYCODES = {
-      '48': '0',
-      '49': '1',
-      '50': '2',
-      '51': '3',
-      '52': '4',
-      '53': '5',
-      '54': '6',
-      '55': '7',
-      '56': '8',
-      '57': '9',
-    };
+  // document.addEventListener('keydown', function (evt) {
+  //   let SYMBOL_KEYCODES = {
+  //     '48': '0',
+  //     '49': '1',
+  //     '50': '2',
+  //     '51': '3',
+  //     '52': '4',
+  //     '53': '5',
+  //     '54': '6',
+  //     '55': '7',
+  //     '56': '8',
+  //     '57': '9',
+  //   };
 
-    let BACKSPACE_KEYCODE = 8;
+  //   let BACKSPACE_KEYCODE = 8;
 
-    if (evt.keyCode in SYMBOL_KEYCODES) {
-      evt.preventDefault();
-      addSymbolToInput(SYMBOL_KEYCODES[evt.keyCode])
-    }
+  //   if (evt.keyCode in SYMBOL_KEYCODES) {
+  //     evt.preventDefault();
+  //     addSymbolToInput(SYMBOL_KEYCODES[evt.keyCode])
+  //   }
 
-    else if (evt.keyCode === BACKSPACE_KEYCODE) {
-      deleteLastSymbol();
-    }
+  //   else if (evt.keyCode === BACKSPACE_KEYCODE) {
+  //     deleteLastSymbol();
+  //   }
 
-    function addSymbolToInput(number) {
-      if (screen.value === '0') {
-        screen.value = number;
-      } else {
-        screen.value += number;
-      };
-    };
+  //   function addSymbolToInput(number) {
+  //     if (screen.value === '0') {
+  //       screen.value = number;
+  //     } else {
+  //       screen.value += number;
+  //     };
+  //   };
 
-    function deleteLastSymbol() {
-      let subStr = screen.value.slice(0, -1)
-      screen.value = subStr === '' ? '' : subStr;
-    };
-  });
+  //   function deleteLastSymbol() {
+  //     let subStr = screen.value.slice(0, -1)
+  //     screen.value = subStr === '' ? '' : subStr;
+  //   };
+  // });
 };
 
 calculate();

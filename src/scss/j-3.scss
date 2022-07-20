@@ -1,0 +1,22 @@
+.timer__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: $green;
+  max-width: 30rem;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 2rem 0;
+}
+
+.timer__inputs {
+  padding: 1rem 0;
+}
+
+.timer__inputs input {
+  width: 6rem;
+  background-color: $purple;
+  outline: none;
+  border: none;
+}
