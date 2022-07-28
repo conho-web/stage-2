@@ -32,6 +32,7 @@
     "webpack-dev-server": "^4.9.3"
   },
   "dependencies": {
-    "autoprefixer": "10.4.5"
+    "autoprefixer": "10.4.5",
+    "openweather-apis": "^4.4.2"
   }
 }
