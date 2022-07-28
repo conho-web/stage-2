@@ -9,6 +9,41 @@
 
 <body>
   <main>
+    <section class="weather">
+      <h2 class="title">J5: Weather</h2>
+
+      <form action="/" method="get" id="form1">
+        <div class="weather__wrapper">
+          <h2>Введите координаты</h2>
+          <label for="lat">Введите lat</label>
+          <input type="text" id="lat" name="lat"><br><br>
+          <label for="lon">Введите lon</label>
+          <input type="text" id="lon" name="lon">
+  
+          <h2 class="weather__city">Москва</h2>
+          <hr>
+  
+          <div class="weather__block">
+            <p class="weather__time">12:00: </p>
+            <p class="weather__numbers"></p>
+          </div>
+  
+          <div class="weather__block">
+            <p class="weather__time">15:00: </p>
+            <p class="weather__numbers"></p>
+          </div>
+  
+          <div class="weather__block">
+            <p class="weather__time">18:00: </p>
+            <p class="weather__numbers"></p>
+          </div>
+        </div>
+      </form>
+
+      <button type="submit" form="form1" value="Submit">Submit</button>
+      <p>Получить координаты можно на <a href="https://yandex.com/maps" target="_blank">yandex maps</a></p>
+    </section>
+
     <section class="labyrinth" id="labyrinth">
       <h2 class="title">J4: Game</h2>
     </section>
